@@ -15,9 +15,9 @@ logos:
   title: We work with bold brands we believe in
   logos_list:
   - name: Telefonica
-    image: 
+    image: "/uploads/telefonica.svg"
   - name: Antai
-    image: 
+    image: "/uploads/telefonica.png"
 contact:
   title: Contact
   subsections:
