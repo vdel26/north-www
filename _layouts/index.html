@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<section class="hero">
+  <div class="hero__logo"></div>
+  <div class="hero__tagline">{{ page.tagline }}</div>
+</section>
+
+<section class="showcase"></section>
+<section class="logos"></section>
+<section class="contact"></section>
+
+<!--
+<div class="page home">
+
+  <div class="home__wrapper">
+
+    <section class="about">
+      {{ page.body | markdownify }}
+    </section>
+
+    <aside class="contact">
+      <a class="contact__link" href="http://twitter.com/lechienvic" target="_blank">Twitter</a>
+      <a class="contact__link" href="http://github.com/vdel26" target="_blank">Github</a>
+      <a class="contact__link" href="http://instagram.com/victordg" target="_blank">Instagram</a>
+      <a class="contact__link" href="https://es.linkedin.com/in/vdelgado" target="_blank">Linkedin</a>
+    </aside>
+
+  </div>
+</div>
+
+<div class="page projects">
+  <div class="projects__close js-projects-close">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.9 9.9">
+      <polygon points="9.19 0 4.95 4.24 0.71 0 0 0.71 4.24 4.95 0 9.19 0.71 9.9 4.95 5.66 9.19 9.9 9.9 9.19 5.66 4.95 9.9 0.71 9.19 0"></polygon>
+    </svg>
+  </div>
+
+  <div class="projects__wrapper js-projects">
+    {% for project in page.projects %}
+    <div class="project">
+      <h1 class="project__title">{{ project.title }}</h1>
+      <p class="project__body">{{ project.body }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</div> -->
