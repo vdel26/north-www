@@ -3,46 +3,51 @@ layout: default
 ---
 
 <section class="hero">
-  <div class="hero__logo"></div>
-  <div class="hero__tagline">{{ page.tagline }}</div>
+  <div class="wrapper">
+    <div class="hero__logo"></div>
+    <h1 class="hero__tagline">{{ page.tagline }}</h1>
+  </div>
 </section>
 
-<section class="showcase"></section>
-<section class="logos"></section>
-<section class="contact"></section>
+<section class="showcase">
+  <h2 class="showcase__title">{{ page.showcase.title }}</h2>
 
-<!--
-<div class="page home">
-
-  <div class="home__wrapper">
-
-    <section class="about">
-      {{ page.body | markdownify }}
-    </section>
-
-    <aside class="contact">
-      <a class="contact__link" href="http://twitter.com/lechienvic" target="_blank">Twitter</a>
-      <a class="contact__link" href="http://github.com/vdel26" target="_blank">Github</a>
-      <a class="contact__link" href="http://instagram.com/victordg" target="_blank">Instagram</a>
-      <a class="contact__link" href="https://es.linkedin.com/in/vdelgado" target="_blank">Linkedin</a>
-    </aside>
-
-  </div>
-</div>
-
-<div class="page projects">
-  <div class="projects__close js-projects-close">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.9 9.9">
-      <polygon points="9.19 0 4.95 4.24 0.71 0 0 0.71 4.24 4.95 0 9.19 0.71 9.9 4.95 5.66 9.19 9.9 9.9 9.19 5.66 4.95 9.9 0.71 9.19 0"></polygon>
-    </svg>
-  </div>
-
-  <div class="projects__wrapper js-projects">
-    {% for project in page.projects %}
-    <div class="project">
-      <h1 class="project__title">{{ project.title }}</h1>
-      <p class="project__body">{{ project.body }}</p>
+  <div class="showcase__item">
+    <img class="showcase__img" src="{{ page.showcase.projects.first.mobile_image }}" alt="{{ page.showcase.projects.first.description }}">
+    <div class="showcase__item__data">
+      <div class="showcase__item__description">{{ page.showcase.projects.first.description }}</div>
+      <div class="showcase__item__count">1 / 6</div>
     </div>
+  </div>
+
+</section>
+
+<section class="logos">
+  <h2 class="logos__title">{{ page.logos.title }}</h2>
+  <div class="logos__list">
+    {% for logo in page.logos.logos_list %}
+      <img class="logos__list__item" src="{{ logo.image }}" alt="{{ logo.description }}">
     {% endfor %}
   </div>
-</div> -->
+</section>
+
+<section class="contact">
+  <div class="wrapper">
+
+    <h2 class="contact__title">{{ page.contact.title }}</h2>
+    <div class="contact__subsection">
+      <h3 class="contact__subsection__title">General inquiries</h3>
+      <p class="contact__subsection__body">Do you have a project, new business or an idea you'd like to collaborate with North on? Let's talk.</p>
+      <a class="contact__subsection__email" href="mailto:hello@thenorthstudio.com">hello@thenorthstudio.com</a>
+    </div>
+
+    <div class="contact__social">
+      <h3 class="contact__social__title">Follow us</h3>
+
+      <a class="contact__social__link" href="https://www.linkedin.com/company/thenorthstudio.com">Linkedin</a>
+      <a class="contact__social__link" href="https://www.instagram.com/thenorthstudio/">Instagram</a>
+      <a class="contact__social__link" href="#">Facebook</a>
+    </div>
+
+  </div>
+</section>

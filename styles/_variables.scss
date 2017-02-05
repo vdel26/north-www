@@ -1,0 +1,25 @@
+//---- sizes
+
+
+//---- typography
+
+@font-face {
+  font-family: 'NoeDisplay';
+  font-style: 'normal';
+  src: url(../assets/fonts/NoeDisplayRegular.otf);
+  src: url(../assets/fonts/NoeDisplayRegular.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'BentonSans-Book';
+  font-style: 'normal';
+  src: url(../assets/fonts/benton-book.otf) format('woff');
+}
+
+$font-family-title: 'NoeDisplay', serif;
+$font-family-body: 'BentonSans-Book', -apple-system, BlinkMacSystemFont, Roboto, Calibri, sans-serif;
+
+//---- colors
+
+$black: #121212;
+
