@@ -4,8 +4,11 @@ layout: default
 
 <section class="hero">
   <div class="wrapper">
-    <div class="hero__logo"></div>
-    <h1 class="hero__tagline">{{ page.tagline }}</h1>
+    <header class="hero__header">
+      <h1 class="hero__brand">North</h1>
+      <nav class="hero__menu"></nav>
+    </header>
+    <h2 class="hero__tagline">{{ page.tagline }}</h2>
   </div>
 </section>
 
@@ -13,13 +16,18 @@ layout: default
   <h2 class="showcase__title">{{ page.showcase.title }}</h2>
 
   <div class="showcase__item">
-    <img class="showcase__img" src="{{ page.showcase.projects.first.mobile_image }}" alt="{{ page.showcase.projects.first.description }}">
+
+    <picture>
+      <source srcset="{{ page.showcase.projects.first.desktop_image }}" media="(min-width: 600px)">
+      <img class="showcase__img" src="{{ page.showcase.projects.first.mobile_image }}" alt="{{ page.showcase.projects.first.description }}">
+    </picture>
+
     <div class="showcase__item__data">
       <div class="showcase__item__description">{{ page.showcase.projects.first.description }}</div>
       <div class="showcase__item__count">1 / 6</div>
     </div>
-  </div>
 
+  </div>
 </section>
 
 <section class="logos">

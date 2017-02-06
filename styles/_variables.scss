@@ -1,18 +1,31 @@
 //---- sizes
 
+$break-phone: 25rem; // 400
+$break-tablet: 32rem; // 512
+$break-desktop: 48rem; // 768
 
 //---- typography
 
 @font-face {
   font-family: 'NoeDisplay';
-  font-style: 'normal';
+  font-style: normal;
+  font-weight: normal;
   src: url(../assets/fonts/NoeDisplayRegular.otf);
   src: url(../assets/fonts/NoeDisplayRegular.woff) format('woff');
 }
 
 @font-face {
+  font-family: 'NoeDisplay';
+  font-style: normal;
+  font-weight: bold;
+  src: url(../assets/fonts/NoeDisplayBold.otf);
+  src: url(../assets/fonts/NoeDisplayBold.woff) format('woff');
+}
+
+@font-face {
   font-family: 'BentonSans-Book';
-  font-style: 'normal';
+  font-style: normal;
+  font-weight: normal;
   src: url(../assets/fonts/benton-book.otf) format('woff');
 }
 
@@ -22,4 +35,4 @@ $font-family-body: 'BentonSans-Book', -apple-system, BlinkMacSystemFont, Roboto,
 //---- colors
 
 $black: #121212;
-
+$white: #FFF;
