@@ -2,6 +2,7 @@
 ---
 
 @charset "utf-8";
+@import "reset";
 @import "variables";
 
 html, body {
@@ -12,7 +13,7 @@ html, body {
 }
 
 .wrapper {
-  margin: 0 60px;
+  margin: 0 30px;
 }
 
 // landing section
@@ -51,7 +52,7 @@ html, body {
 .showcase__title {
   position: absolute;
   top: 88px;
-  left: 60px;
+  left: 30px;
   margin: 0;
 
   font-family: $font-family-body;
@@ -66,9 +67,9 @@ html, body {
 
 .showcase__item__data {
   position: absolute;
-  bottom: 60px;
-  left: 60px;
-  margin-right: 60px;
+  bottom: 30px;
+  left: 30px;
+  margin-right: 30px;
 }
 
 .showcase__item__description {
