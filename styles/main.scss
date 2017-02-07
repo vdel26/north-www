@@ -18,7 +18,7 @@ html, body {
   width: 100%;
   max-width: 100%;
 
-  @media (min-width: 600px) {
+  @media (min-width: $break-desktop) {
     padding: 0 60px;
   }
 }
@@ -38,8 +38,9 @@ html, body {
     justify-content: center;
   }
 
-  @media (min-width: 600px) {
-    min-height: 95vh;
+  @media (min-width: $break-desktop) {
+    height: 95vh;
+    min-height: 600px;
   }
 }
 
@@ -53,7 +54,7 @@ html, body {
   letter-spacing: 0.3px;
   color: $black;
 
-  @media (min-width: 600px) {
+  @media (min-width: $break-desktop) {
     display: block;
     position: absolute;
     left: 60px;
@@ -69,7 +70,7 @@ html, body {
   line-height: 1.42;
   letter-spacing: 0.5px;
 
-  @media (min-width: 600px) {
+  @media (min-width: $break-desktop) {
     font-size: 38px;
   }
 }
@@ -93,7 +94,7 @@ html, body {
   font-weight: normal;
   color: #FFF;
 
-  @media (min-width: 600px) {
+  @media (min-width: $break-desktop) {
     left: 60px;
   }
 }
@@ -108,7 +109,7 @@ html, body {
   left: 30px;
   right: 30px;
 
-  @media (min-width: 600px) {
+  @media (min-width: $break-desktop) {
     bottom: 60px;
     left: 60px;
     right: 60px;
@@ -141,6 +142,10 @@ html, body {
   width: 100vw;
   padding-top: 240px;
   background-color: $black;
+
+  @media (min-width: $break-desktop) {
+    padding-top: 200px;
+  }
 }
 
 .logos__title {
@@ -159,17 +164,36 @@ html, body {
   align-items: center;
   margin-top: 240px;
   text-align: center;
+
+  @media (min-width: $break-desktop) {
+    padding: 0 120px;
+    margin-top: 200px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .logos__list__item {
-  width: 170px;
+  flex: 1;
   margin-bottom: 240px;
+
+  @media (min-width: $break-desktop) {
+    flex: 0 0 33.3333%;
+  }
+
+  > img {
+    max-width: 200px;
+  }
 }
 
 // contact
 
 .contact {
-  padding-top: 88px;
+  padding-top: 44px;
+
+  @media (min-width: $break-desktop) {
+    padding-top: 200px;
+  }
 }
 
 .contact__title {
@@ -183,6 +207,10 @@ html, body {
 
 .contact__subsection {
   margin-top: 90px;
+
+  @media (min-width: $break-desktop) {
+    margin-top: 200px;
+  }
 }
 
 .contact__subsection__title {
@@ -202,9 +230,18 @@ html, body {
   font-family: $font-family-body;
   font-size: 18px;
   font-weight: normal;
+  line-height: 1.87;
+
+
+  @media (min-width: $break-desktop) {
+    max-width: 400px;
+  }
 }
 
 .contact__subsection__email {
+  display: inline-block;
+  margin-top: 30px;
+
   color: $black;
   font-family: $font-family-body;
   font-size: 18px;
@@ -217,6 +254,10 @@ html, body {
   margin-bottom: 120px;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $break-desktop) {
+    margin-bottom: 200px;
+  }
 }
 
 .contact__social__title {
@@ -231,7 +272,7 @@ html, body {
 }
 
 .contact__social__link {
-  margin-top: 15px;
+  margin-bottom: 15px;
 
   color: $black;
   font-family: $font-family-body;

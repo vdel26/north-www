@@ -32,10 +32,15 @@ layout: default
 
 <section class="logos">
   <h2 class="logos__title">{{ page.logos.title }}</h2>
+
   <div class="logos__list">
+    {% for i in (1..3) %} <!-- REMOVE LATER -->
     {% for logo in page.logos.logos_list %}
-      <img class="logos__list__item" src="{{ logo.image }}" alt="{{ logo.description }}">
+    <div class="logos__list__item">
+      <img src="{{ logo.image }}" alt="{{ logo.description }}">
+    </div>
     {% endfor %}
+    {% endfor %}  <!-- REMOVE LATER -->
   </div>
 </section>
 
@@ -43,6 +48,7 @@ layout: default
   <div class="wrapper">
 
     <h2 class="contact__title">{{ page.contact.title }}</h2>
+
     <div class="contact__subsection">
       <h3 class="contact__subsection__title">General inquiries</h3>
       <p class="contact__subsection__body">Do you have a project, new business or an idea you'd like to collaborate with North on? Let's talk.</p>
