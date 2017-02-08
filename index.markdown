@@ -5,22 +5,28 @@ tagline: A digital product studio from Barcelona.
 showcase:
   title: Featured work
   projects:
-  - description: CL3VER – The future of 3D and VR presentations
+  - name: CL3VER
+    description: CL3VER – The future of 3D and VR presentations
     desktop_image: "/uploads/clever_desktop.png"
     mobile_image: "/uploads/clever_mobile.png"
-  - description: Marybola – Trust in the natural jewelry details
+  - name: Marybola
+    description: Marybola – Trust in the natural jewelry details
     desktop_image: "/uploads/marybola_desktop.png"
     mobile_image: "/uploads/marybola_mobile.png"
-  - description: Antai – The better way to buy a new car
+  - name: Antai
+    description: Antai – The better way to buy a new car
     desktop_image: "/uploads/antai_desktop.png"
     mobile_image: "/uploads/antai_mobile.png"
-  - description: Fitness – Get healthy and stay fit
+  - name: Fitness
+    description: Fitness – Get healthy and stay fit
     desktop_image: "/uploads/fitness_desktop.png"
     mobile_image: "/uploads/fitness_mobile.png"
-  - description: Icar – Identity verification in financial services
+  - name: Icar
+    description: Icar – Identity verification in financial services
     desktop_image: "/uploads/icar_desktop.png"
     mobile_image: "/uploads/icar_mobile.png"
-  - description: Renault – Sustainable mobility for everyone
+  - name: Renault
+    description: Renault – Sustainable mobility for everyone
     desktop_image: "/uploads/renault_desktop.png"
     mobile_image: "/uploads/renault_mobile.png"
 logos:
