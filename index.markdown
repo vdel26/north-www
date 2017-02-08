@@ -6,27 +6,27 @@ showcase:
   title: Featured work
   projects:
   - name: CL3VER
-    description: CL3VER – The future of 3D and VR presentations
+    description: The future of 3D and VR presentations
     desktop_image: "/uploads/clever_desktop.png"
     mobile_image: "/uploads/clever_mobile.png"
   - name: Marybola
-    description: Marybola – Trust in the natural jewelry details
+    description: Trust in the natural jewelry details
     desktop_image: "/uploads/marybola_desktop.png"
     mobile_image: "/uploads/marybola_mobile.png"
   - name: Antai
-    description: Antai – The better way to buy a new car
+    description: The better way to buy a new car
     desktop_image: "/uploads/antai_desktop.png"
     mobile_image: "/uploads/antai_mobile.png"
   - name: Fitness
-    description: Fitness – Get healthy and stay fit
+    description: Get healthy and stay fit
     desktop_image: "/uploads/fitness_desktop.png"
     mobile_image: "/uploads/fitness_mobile.png"
   - name: Icar
-    description: Icar – Identity verification in financial services
+    description: Identity verification in financial services
     desktop_image: "/uploads/icar_desktop.png"
     mobile_image: "/uploads/icar_mobile.png"
   - name: Renault
-    description: Renault – Sustainable mobility for everyone
+    description: Sustainable mobility for everyone
     desktop_image: "/uploads/renault_desktop.png"
     mobile_image: "/uploads/renault_mobile.png"
 logos:
