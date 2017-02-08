@@ -3,8 +3,8 @@ layout: default
 ---
 
 <section class="hero">
-  <div class="wrapper">
-    <header class="hero__header">
+  <div class="u-wrapper">
+    <header class="hero__header u-hidden-mobile">
       <h1 class="hero__brand">North</h1>
       <nav class="hero__menu"></nav>
     </header>
@@ -15,6 +15,12 @@ layout: default
 <section class="showcase">
   <h2 class="showcase__title">{{ page.showcase.title }}</h2>
 
+  <nav class="showcase__list u-hidden-mobile js-desktop-showcase">
+  {% for project in page.showcase.projects %}
+    <div class="showcase__list__item" data-id="{{ project.name }}">{{ project.description }}</div>
+  {% endfor %}
+  </nav>
+
   <div class="showcase__item">
 
     <picture>
@@ -22,7 +28,7 @@ layout: default
       <img class="showcase__img" src="{{ page.showcase.projects.first.mobile_image }}" alt="{{ page.showcase.projects.first.description }}">
     </picture>
 
-    <div class="showcase__item__data">
+    <div class="showcase__item__data u-hidden-desktop">
       <div class="showcase__item__description">{{ page.showcase.projects.first.description }}</div>
       <div class="showcase__item__count">1 / 6</div>
     </div>
@@ -45,7 +51,7 @@ layout: default
 </section>
 
 <section class="contact">
-  <div class="wrapper">
+  <div class="u-wrapper">
 
     <h2 class="contact__title">{{ page.contact.title }}</h2>
 
