@@ -37,9 +37,16 @@ class App {
 
   mobileShowcase () {
     // rotate through projects list in 3s intervals
+    // trigger only once the user has scrolled down
+    // to the showcase area
+    setInterval(() => {
+      console.log('now')
+    }, 1000)
   }
 
-  init () {}
+  init () {
+    this.mobileShowcase()
+  }
 }
 
 document.addEventListener('DOMContentLoaded', () => window.app = new App())
