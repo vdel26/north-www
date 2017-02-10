@@ -17,23 +17,27 @@ layout: default
 
   <nav class="showcase__list u-hidden-mobile js-desktop-showcase">
   {% for project in page.showcase.projects %}
-    <div class="showcase__list__item" data-id="{{ project.name }}">{{ project.description }}</div>
+    <div class="showcase__list__item">
+      <span class="showcase__list__item__name" data-id="{{ project.name }}">{{ project.name }}</span><span class="showcase__list__item__description"> &mdash; {{ project.description }}</span>
+    </div>
   {% endfor %}
   </nav>
 
-  <div class="showcase__item">
+  {% for project in page.showcase.projects %}
+  <div class="showcase__item" data-id="{{ project.name }}">
 
     <picture>
-      <source srcset="{{ page.showcase.projects.first.desktop_image }}" media="(min-width: 600px)">
-      <img class="showcase__img" src="{{ page.showcase.projects.first.mobile_image }}" alt="{{ page.showcase.projects.first.description }}">
+      <source srcset="{{ project.desktop_image }}" media="(min-width: 600px)">
+      <img class="showcase__img" src="{{ project.mobile_image }}" alt="{{ project.description }}" data-id="{{ project.name }}">
     </picture>
 
     <div class="showcase__item__data u-hidden-desktop">
-      <div class="showcase__item__description">{{ page.showcase.projects.first.description }}</div>
+      <div class="showcase__item__description">{{ project.name }} &mdash; {{ project.description }}</div>
       <div class="showcase__item__count">1 / 6</div>
     </div>
 
   </div>
+  {% endfor %}
 </section>
 
 <section class="logos">

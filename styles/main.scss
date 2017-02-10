@@ -90,13 +90,16 @@ html, body {
 .showcase {
   position: relative;
   width: 100vw;
+  min-height: 835px;
   background-color: $black;
+  cursor: pointer;
 }
 
 .showcase__title {
   position: absolute;
   top: 88px;
   left: 30px;
+  z-index: 10;
   margin: 0;
 
   font-family: $font-family-body;
@@ -113,6 +116,8 @@ html, body {
   position: absolute;
   left: 60px;
   bottom: 120px;
+  z-index: 10;
+  pointer-events: none;
 }
 
 .showcase__list__item {
@@ -125,13 +130,46 @@ html, body {
   line-height: 1.32;
   letter-spacing: 0.5px;
   color: $white;
+  pointer-events: none;
+  transition: .3s opacity ease;
+}
 
-  &:hover {
-    opacity: 1;
-  }
-  &:hover ~ .showcase__list__item {
+.showcase__list__item__name {
+  pointer-events: all;
+}
+
+.showcase__list__item__description {
+  opacity: 0;
+  transition: .3s opacity ease;
+  pointer-events: none;
+}
+
+/* desktop showcase switcher */
+.showcase__list:hover {
+  .showcase__list__item {
     opacity: 0.1;
   }
+  .showcase__list__item:hover {
+    opacity: 1;
+
+    .showcase__list__item__description {
+      opacity: 1;
+    }
+  }
+}
+
+.showcase__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .3s opacity ease;
+}
+
+.showcase__item.is-active {
+  opacity: 1;
+  transition: .5s opacity ease;
 }
 
 .showcase__img {
