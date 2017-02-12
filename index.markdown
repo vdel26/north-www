@@ -37,7 +37,19 @@ logos:
   - name: Antai
     image: "/uploads/Logo_Antai.svg"
   - name: Grupo Planeta
-    image: "/uploads/tfn-logo.svg"
+    image: "/uploads/Logo_GrupoPlaneta.svg"
+  - name: CL3VER
+    image: "/uploads/Logo_Cl3ver.svg"
+  - name: Renault
+    image: "/uploads/Logo_Renault-e22c38.svg"
+  - name: Bertelsmann
+    image: "/uploads/Logo_FBertelsmann.svg"
+  - name: Nestlé
+    image: "/uploads/Logo_Nestlea.svg"
+  - name: EAE
+    image: "/uploads/Logo_EAE.svg"
+  - name: ICAR
+    image: "/uploads/Logo_ICAR.svg"
 contact:
   title: Contact
   subsections:
