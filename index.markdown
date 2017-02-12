@@ -57,8 +57,10 @@ contact:
     description: 
     email: 
   social:
-  - text: "[Linkedin](https://www.linkedin.com/company/thenorthstudio.com)"
-  - text: "[Instagram](https://www.instagram.com/thenorthstudio/)"
+  - name: Linkedin
+    url: https://www.linkedin.com/company/thenorthstudio.com
+  - name: Instagram
+    url: https://www.instagram.com/thenorthstudio/
 layout: index
 ---
 
