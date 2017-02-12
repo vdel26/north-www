@@ -36,16 +36,28 @@ class App {
   }
 
   mobileShowcase () {
-    // rotate through projects list in 3s intervals
-    // trigger only once the user has scrolled down
-    // to the showcase area
+    const items = document.querySelectorAll('.showcase__item')
+    let list = Array.from(items)
+    let active = 0
+    let previous
     setInterval(() => {
-      console.log('now')
-    }, 1000)
+      previous = active === 0 ? list.length - 1 : active - 1
+      list[previous].classList.remove('is-active')
+      list[active].classList.add('is-active')
+      active++
+      if (active === list.length) {
+        active = 0
+      }
+    }, 4000)
   }
 
   init () {
-    this.mobileShowcase()
+    // detect touch device
+    const isTouch = ('ontouchstart' in window) || (window.DocumentTouch && document instanceof window.DocumentTouch)
+    if (isTouch) {
+      document.body.classList.add('is-touch')
+      this.mobileShowcase()
+    }
   }
 }
 
