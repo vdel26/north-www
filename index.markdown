@@ -59,7 +59,6 @@ contact:
   social:
   - text: "[Linkedin](https://www.linkedin.com/company/thenorthstudio.com)"
   - text: "[Instagram](https://www.instagram.com/thenorthstudio/)"
-  - text: Facebook
 layout: index
 ---
 
