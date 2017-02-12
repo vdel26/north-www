@@ -35,7 +35,7 @@ logos:
   - name: Telefonica
     image: "/uploads/tfn-logo.svg"
   - name: Antai
-    image: "/uploads/tfn-logo.svg"
+    image: "/uploads/Logo_Antai.svg"
   - name: Grupo Planeta
     image: "/uploads/tfn-logo.svg"
 contact:
