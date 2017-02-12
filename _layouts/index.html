@@ -13,9 +13,9 @@ layout: default
 </section>
 
 <section class="showcase">
-  <h2 class="showcase__title">{{ page.showcase.title }}</h2>
+  <h2 class="showcase__title js-reveal">{{ page.showcase.title }}</h2>
 
-  <nav class="showcase__list u-hidden-mobile js-desktop-showcase">
+  <nav class="showcase__list u-hidden-mobile js-desktop-showcase js-reveal">
   {% for project in page.showcase.projects %}
     <div class="showcase__list__item">
       <span class="showcase__list__item__name" data-id="{{ project.name }}">{{ project.name }}</span><span class="showcase__list__item__description"> &mdash; {{ project.description }}</span>
@@ -32,7 +32,7 @@ layout: default
     </picture>
 
     <div class="showcase__item__data u-hidden-desktop">
-      <div class="showcase__item__description">{{ project.name }} &mdash; {{ project.description }}</div>
+      <div class="showcase__item__description js-reveal">{{ project.name }} &mdash; {{ project.description }}</div>
       <div class="showcase__item__count">{{ forloop.index }} / 6</div>
     </div>
 
@@ -41,18 +41,18 @@ layout: default
 </section>
 
 <section class="logos">
-  <h2 class="logos__title">{{ page.logos.title }}</h2>
+  <h2 class="logos__title js-reveal">{{ page.logos.title }}</h2>
 
   <div class="logos__list">
     {% for logo in page.logos.logos_list %}
-    <div class="logos__list__item">
+    <div class="logos__list__item js-reveal">
       <img src="{{ logo.image }}" alt="{{ logo.name }}">
     </div>
     {% endfor %}
   </div>
 </section>
 
-<section class="contact">
+<section class="contact js-reveal">
   <div class="u-wrapper">
 
     <h2 class="contact__title">{{ page.contact.title }}</h2>

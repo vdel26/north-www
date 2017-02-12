@@ -1,5 +1,6 @@
 import FontFaceObserver from 'fontfaceobserver'
 import Picturefill from 'picturefill'
+import ScrollReveal from 'scrollreveal'
 
 const $ = document.querySelector.bind(document)
 
@@ -51,9 +52,22 @@ class App {
     }, 4000)
   }
 
+  setUpReveal () {
+    this.sr = ScrollReveal()
+    this.sr.reveal('.js-reveal', {
+      duration: 400,
+      delay: 75,
+      scale: 1,
+      distance: '2rem'
+    })
+  }
+
   init () {
     // detect touch device
     const isTouch = ('ontouchstart' in window) || (window.DocumentTouch && document instanceof window.DocumentTouch)
+
+    this.setUpReveal()
+
     if (isTouch) {
       document.body.classList.add('is-touch')
       this.mobileShowcase()
