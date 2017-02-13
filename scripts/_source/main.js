@@ -1,4 +1,4 @@
-import FontFaceObserver from 'fontfaceobserver'
+// import FontFaceObserver from 'fontfaceobserver'
 import Picturefill from 'picturefill'
 import ScrollReveal from 'scrollreveal'
 
@@ -17,7 +17,6 @@ class App {
 
   desktopShowcaseSet (evt) {
     // set to project image
-    console.log('over', evt.target.dataset.id)
     const projectId = evt.target.dataset.id
     const item = $(`.showcase__item[data-id=${projectId}]`)
     if (item) {
@@ -27,7 +26,6 @@ class App {
 
   desktopShowcaseLeave (evt) {
     // set to black background
-    console.log('leave', evt.target)
     const items = document.querySelectorAll('.showcase__item')
     Array.from(items).map((item) => {
       if (item.classList.contains('is-active')) {
@@ -55,8 +53,9 @@ class App {
   setUpReveal () {
     this.sr = ScrollReveal()
     this.sr.reveal('.js-reveal', {
-      duration: 400,
+      duration: 500,
       delay: 75,
+      easing: 'ease-out',
       scale: 1,
       distance: '2rem'
     })
