@@ -33,7 +33,7 @@ layout: default
 
     <div class="showcase__item__data u-hidden-desktop">
       <div class="showcase__item__description js-reveal">{{ project.name }} &mdash; {{ project.description }}</div>
-      <div class="showcase__item__count">{{ forloop.index }} / 6</div>
+      <div class="showcase__item__count">{{ forloop.index }} / {{ forloop.length }}</div>
     </div>
 
   </div>
@@ -41,7 +41,7 @@ layout: default
 </section>
 
 <section class="logos">
-  <h2 class="logos__title js-reveal">{{ page.logos.title }}</h2>
+  <h2 class="logos__title u-wrapper js-reveal">{{ page.logos.title }}</h2>
 
   <div class="logos__list">
     {% for logo in page.logos.logos_list %}

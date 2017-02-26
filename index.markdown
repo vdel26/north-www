@@ -30,7 +30,7 @@ showcase:
     desktop_image: "/uploads/renault_desktop.jpg"
     mobile_image: "/uploads/renault_mobile.jpg"
 logos:
-  title: We work with bold brands we believe in
+  title: We help startups and established companies create their next product or venture
   logos_list:
   - name: Telefonica
     image: "/uploads/tfn-logo.svg"
@@ -54,8 +54,8 @@ contact:
   title: Contact
   subsections:
   - title: General inquiries
-    description: 
-    email: 
+    description:
+    email:
   social:
   - name: Linkedin
     url: https://www.linkedin.com/company/thenorthstudio.com

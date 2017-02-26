@@ -5,11 +5,22 @@
 @import "reset";
 @import "variables";
 
+// global
+
 html, body {
   width: 100vw;
   min-height: 100vh;
   margin: 0;
   padding: 0;
+}
+
+::-moz-selection {
+    background-color: $grey;
+    color: $white;
+}
+::selection {
+    background-color: $grey;
+    color: $white;
 }
 
 // utilities
@@ -41,13 +52,22 @@ html, body {
 
 .hero {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   color: $black;
   min-height: 85vh;
 
   .u-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
 
@@ -131,6 +151,7 @@ html, body {
   letter-spacing: 0.5px;
   color: $white;
   pointer-events: none;
+  -webkit-transition: .3s opacity ease;
   transition: .3s opacity ease;
 }
 
@@ -140,6 +161,7 @@ html, body {
 
 .showcase__list__item__description {
   opacity: 0;
+  -webkit-transition: .3s opacity ease;
   transition: .3s opacity ease;
   pointer-events: none;
 }
@@ -164,11 +186,13 @@ html, body {
   left: 0;
   right: 0;
   opacity: 0;
+  -webkit-transition: .3s opacity ease;
   transition: .3s opacity ease;
 }
 
 .showcase__item.is-active {
   opacity: 1;
+  -webkit-transition: .5s opacity ease;
   transition: .5s opacity ease;
 }
 
@@ -232,8 +256,15 @@ html, body {
 }
 
 .logos__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin-top: 240px;
   text-align: center;
@@ -241,16 +272,24 @@ html, body {
   @media (min-width: $break-desktop) {
     padding: 0 120px;
     margin-top: 200px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 }
 
 .logos__list__item {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
   flex: 1;
   margin-bottom: 240px;
 
   @media (min-width: $break-desktop) {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.3333%;
     flex: 0 0 33.3333%;
   }
 
@@ -325,7 +364,12 @@ html, body {
 .contact__social {
   margin-top: 90px;
   margin-bottom: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 
   @media (min-width: $break-desktop) {
