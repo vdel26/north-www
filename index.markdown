@@ -7,28 +7,28 @@ showcase:
   projects:
   - name: CL3VER
     description: The future of 3D and VR presentations
-    desktop_image: "/uploads/clever_desktop.png"
-    mobile_image: "/uploads/clever_mobile.png"
+    desktop_image: "/uploads/clever_desktop.jpg"
+    mobile_image: "/uploads/clever_mobile.jpg"
   - name: Marybola
     description: Trust in the natural jewelry details
-    desktop_image: "/uploads/marybola_desktop.png"
-    mobile_image: "/uploads/marybola_mobile.png"
+    desktop_image: "/uploads/marybola_desktop.jpg"
+    mobile_image: "/uploads/marybola_mobile.jpg"
   - name: Antai
     description: The better way to buy a new car
-    desktop_image: "/uploads/antai_desktop.png"
-    mobile_image: "/uploads/antai_mobile.png"
+    desktop_image: "/uploads/antai_desktop.jpg"
+    mobile_image: "/uploads/antai_mobile.jpg"
   - name: Fitness
     description: Get healthy and stay fit
-    desktop_image: "/uploads/fitness_desktop.png"
-    mobile_image: "/uploads/fitness_mobile.png"
+    desktop_image: "/uploads/fitness_desktop.jpg"
+    mobile_image: "/uploads/fitness_mobile.jpg"
   - name: Icar
     description: Identity verification in financial services
-    desktop_image: "/uploads/icar_desktop.png"
-    mobile_image: "/uploads/icar_mobile.png"
+    desktop_image: "/uploads/icar_desktop.jpg"
+    mobile_image: "/uploads/icar_mobile.jpg"
   - name: Renault
     description: Sustainable mobility for everyone
-    desktop_image: "/uploads/renault_desktop.png"
-    mobile_image: "/uploads/renault_mobile.png"
+    desktop_image: "/uploads/renault_desktop.jpg"
+    mobile_image: "/uploads/renault_mobile.jpg"
 logos:
   title: We work with bold brands we believe in
   logos_list:
