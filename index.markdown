@@ -10,23 +10,23 @@ showcase:
     desktop_image: "/uploads/clever_desktop.jpg"
     mobile_image: "/uploads/clever_mobile.jpg"
   - name: Marybola
-    description: Trust in the natural jewelry details
+    description: Trust in the beauty of natural jewelry details
     desktop_image: "/uploads/marybola_desktop.jpg"
     mobile_image: "/uploads/marybola_mobile.jpg"
   - name: Antai
-    description: The better way to buy a new car
+    description: The smarter way to buy your new car
     desktop_image: "/uploads/antai_desktop.jpg"
     mobile_image: "/uploads/antai_mobile.jpg"
   - name: Fitness
-    description: Get healthy and stay fit
+    description: Manage your training program
     desktop_image: "/uploads/fitness_desktop.jpg"
     mobile_image: "/uploads/fitness_mobile.jpg"
   - name: Icar
-    description: Identity verification in financial services
+    description: Identity authentication in financial services
     desktop_image: "/uploads/icar_desktop.jpg"
     mobile_image: "/uploads/icar_mobile.jpg"
   - name: Renault
-    description: Sustainable mobility for everyone
+    description: Designing a sustainable mobility service
     desktop_image: "/uploads/renault_desktop.jpg"
     mobile_image: "/uploads/renault_mobile.jpg"
 logos:
