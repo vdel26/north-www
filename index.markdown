@@ -54,8 +54,8 @@ contact:
   title: Contact
   subsections:
   - title: General inquiries
-    description:
-    email:
+    description: 
+    email: 
   social:
   - name: Linkedin
     url: https://www.linkedin.com/company/thenorthstudio.com
