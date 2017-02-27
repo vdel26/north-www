@@ -45,11 +45,24 @@ html, body {
   @media (max-width: $break-desktop) {
     display: none !important;
   }
+
+  .is-touch & {
+    @media (orientation: landscape) {
+      display: none !important;
+    }
+  }
 }
 
 .u-hidden-desktop {
-  @media (min-width: $break-desktop) {
+  @media (min-width: $break-desktop) and (orientation: landscape) {
     display: none !important;
+  }
+
+
+  .is-touch & {
+    @media (orientation: landscape) {
+      display: unset !important;
+    }
   }
 }
 
@@ -80,6 +93,13 @@ html, body {
     height: 95vh;
     min-height: 600px;
   }
+
+  .is-touch & {
+    @media (orientation: landscape) {
+      height: auto;
+      min-height: 85vh;
+    }
+  }
 }
 
 .hero__header {
@@ -108,6 +128,12 @@ html, body {
   @media (min-width: $break-desktop) {
     font-size: 38px;
   }
+
+  .is-touch & {
+    @media (orientation: landscape) {
+      font-size: 24px;
+    }
+  }
 }
 
 // showcase
@@ -134,6 +160,13 @@ html, body {
 
   @media (min-width: $break-desktop) {
     left: 60px;
+  }
+
+  .is-touch & {
+    @media (orientation: landscape) {
+      top: 30px;
+      left: 30px;
+    }
   }
 }
 
@@ -223,6 +256,14 @@ html, body {
     bottom: 60px;
     left: 60px;
     right: 60px;
+  }
+
+  .is-touch & {
+    @media (orientation: landscape) {
+      bottom: 30px;
+      left: 30px;
+      right: 30px;
+    }
   }
 }
 
@@ -320,6 +361,12 @@ html, body {
   @media (min-width: $break-desktop) {
     padding-top: 200px;
   }
+
+  .is-touch & {
+    @media (orientation: landscape) {
+      padding-top: 44px;
+    }
+  }
 }
 
 .contact__title {
@@ -336,6 +383,12 @@ html, body {
 
   @media (min-width: $break-desktop) {
     margin-top: 200px;
+  }
+
+  .is-touch & {
+    @media (orientation: landscape) {
+      margin-top: 90px;
+    }
   }
 }
 
@@ -358,9 +411,14 @@ html, body {
   font-weight: normal;
   line-height: 1.87;
 
-
   @media (min-width: $break-desktop) {
     max-width: 400px;
+  }
+
+  .is-touch & {
+    @media (orientation: landscape) {
+      max-width: auto;
+    }
   }
 }
 
@@ -388,6 +446,12 @@ html, body {
 
   @media (min-width: $break-desktop) {
     margin-bottom: 200px;
+  }
+
+  .is-touch & {
+    @media (orientation: landscape) {
+      margin-bottom: 120px;
+    }
   }
 }
 
