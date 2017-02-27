@@ -334,6 +334,12 @@ html, body {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
+
+  .is-touch & {
+    @media (orientation: landscape) {
+      padding: 0 30px;
+    }
+  }
 }
 
 .logos__list__item {
