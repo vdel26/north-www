@@ -11,6 +11,7 @@ module.exports = {
       {
         test: /\.jsx?$/,
         exclude: /(node_modules)/,
+        exclude: /node_modules\/(?!(autotrack|dom-utils))/,
         loader: 'babel-loader',
         query: { presets: ['es2015'] }
       }

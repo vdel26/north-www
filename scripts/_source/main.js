@@ -1,6 +1,8 @@
 // import FontFaceObserver from 'fontfaceobserver'
 import Picturefill from 'picturefill'
 import ScrollReveal from 'scrollreveal'
+import 'autotrack/lib/plugins/outbound-link-tracker'
+import 'autotrack/lib/plugins/max-scroll-tracker'
 
 const $ = document.querySelector.bind(document)
 
@@ -61,11 +63,21 @@ class App {
     })
   }
 
+  setUpAnalytics () {
+    ga('create', 'UA-92701310-1', 'auto')
+
+    ga('require', 'outboundLinkTracker')
+    ga('require', 'maxScrollTracker')
+
+    ga('send', 'pageview')
+  }
+
   init () {
     // detect touch device
     const isTouch = ('ontouchstart' in window) || (window.DocumentTouch && document instanceof window.DocumentTouch)
 
     this.setUpReveal()
+    this.setUpAnalytics()
 
     if (isTouch) {
       document.body.classList.add('is-touch')
