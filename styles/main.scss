@@ -12,6 +12,11 @@ html, body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
 }
 
 ::-moz-selection {
@@ -203,6 +208,7 @@ html, body {
 .showcase__img {
   width: 100%;
   height: 100vh;
+  -o-object-fit: cover;
   object-fit: cover;
   font-family: 'object-fit: contain;'; // IE hack: https://github.com/bfred-it/object-fit-images
 }
