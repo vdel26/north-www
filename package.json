@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "./node_modules/webpack/bin/webpack.js --watch -d",
-    "build": "NODE_ENV=production ./node_modules/webpack/bin/webpack.js -p"
+    "build": "NODE_ENV=production ./node_modules/webpack/bin/webpack.js -p",
+    "publish": "surge _site/"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   "dependencies": {
     "autotrack": "^2.0.4",
     "fontfaceobserver": "^2.0.7",
+    "object-fit-images": "^3.1.3",
     "picturefill": "^3.0.2",
     "scrollreveal": "^3.3.2"
   },

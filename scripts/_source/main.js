@@ -1,5 +1,6 @@
 // import FontFaceObserver from 'fontfaceobserver'
 import Picturefill from 'picturefill'
+import objectFitImages from 'object-fit-images'
 import ScrollReveal from 'scrollreveal'
 import 'autotrack/lib/plugins/outbound-link-tracker'
 import 'autotrack/lib/plugins/max-scroll-tracker'
@@ -78,6 +79,7 @@ class App {
 
     this.setUpReveal()
     this.setUpAnalytics()
+    objectFitImages()
 
     if (isTouch) {
       document.body.classList.add('is-touch')
