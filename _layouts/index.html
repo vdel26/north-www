@@ -60,14 +60,14 @@ layout: default
     <div class="contact__subsection">
       <h3 class="contact__subsection__title">General inquiries</h3>
       <p class="contact__subsection__body">Do you have a project, new business or an idea you'd like to collaborate with North on? Let's talk.</p>
-      <a class="contact__subsection__email" href="mailto:hello@thenorthstudio.com" target="_blank">hello@thenorthstudio.com</a>
+      <a class="contact__subsection__email" href="mailto:hello@thenorthstudio.com" target="_blank" rel="noopener">hello@thenorthstudio.com</a>
     </div>
 
     <div class="contact__social">
       <h3 class="contact__social__title">Follow us</h3>
 
       {% for item in page.contact.social %}
-      <a class="contact__social__link" href="{{ item.url }}" target="_blank">{{ item.name }}</a>
+      <a class="contact__social__link" href="{{ item.url }}" target="_blank" rel="noopener">{{ item.name }}</a>
       {% endfor %}
     </div>
 
